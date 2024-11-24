@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+/*cor de fundo pra testa #f4f2e7*/
+:root {
+    --cor-de-fundo: #faf4d0;
+    --cor-da-fonte: #431F14;
+    --cor-butao-primario: #EBBF0A;
+    --cor-whats: #29e870;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-da-fonte);
+    font-family: "Rubik", sans-serif;
+}
+
+
+/*Midia de Celular*/
+@media (max-width:450px) {
+
+    .titulo {
+        font-size: 33px;
+        font-weight: 600;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .section-principal,
+    .section-cardapio,
+    .section-historia,
+    .section-localizacao,
+    .section-pedido {
+        margin: 40px 10px;
+    }
+
+    .imagem-section-principal {
+        width: 300px;
+        margin: 20px 0;
+    }
+
+
+    .section-cardapio {
+        max-width: 450px;
+    }
+
+
+    .card {
+        min-width: 250px;
+    }
+
+    .img-card {
+        width: 250px;
+        height: 250px;
+        padding: 5px;
+    }
+
+    .maps {
+        width: 325px;
+        height: 300px;
+    }
+
+    
+.texto-história {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.btn-ifood{
+    margin-bottom: 5px;
+}
+
+#titulo-footer{
+    display: none;
+}
+
+#espaco1, #espaco2 {
+    display: none;
+}
+
+.contato{
+    font-size: 18px;
+}
+
+}
+
+/*Midia Tablet*/
+@media (min-width:769px) and (max-width: 1024px) {
+    .card {
+        min-width: 250px;
+    }
+
+    .maps {
+        width: 700px;
+        height: 350px;
+    }
+
+    
+.texto-história {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+#espaco2 {
+    display: none;
+}
+
+}
+
+/*Midia pc*/
+@media (min-width:1200px) {
+    #titulo-principal {
+        font-size: 69px;
+    }
+
+    .texto-secundario {
+        font-size: 23px;
+    }
+
+    .btn-primario,
+    .btn-secundario {
+        font-size: 20px;
+    }
+
+    .carousel-item {
+        height: 500px;
+    }
+
+
+    .texto-história {
+        font-size: 19px;
+        font-weight: 300;
+        line-height: 30px;
+        padding-right: 40px;
+    }
+
+    .maps{
+        width: 1100px;
+        height: 600px;
+    }
+
+    #conteudo {
+        width: 1250px;
+    }
+
+   
+
+}
+
+.card {
+    min-width: 250px;
+}
+
+.img-card {
+    width: 250px;
+    height: 250px;
+    padding: 5px;
+}
+
+
+/*NavBar*/
+.navbar {
+    display: flex;
+    margin: auto;
+    font-size: 16px;
+    box-shadow: 1px 1px 5px rgba(171, 171, 171, 0.562);
+    
+}
+
+.titulo-navbar {
+    font-weight: 600;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--cor-da-fonte);
+}
+
+.navbar a:hover {
+    color: #853f2a;
+
+
+}
+
+.nav-link {
+    margin-left: 30px;
+}
+
+.show {
+    background-color: var(--cor-de-fundo);
+    transition: .5s;
+}
+
+/*Elementos*/
+.logo {
+    width: 110px;
+    margin-right: 10px;
+}
+
+
+.texto-secundario {
+    color: rgb(71, 71, 71);
+}
+
+/*icon Ifood*/
+#Layer_1 {
+    width: 20px;
+}
+
+/*BTN*/
+
+.btn {}
+
+.btn-primario {
+    background-color: var(--cor-butao-primario);
+    color: white;
+    margin-right: 10px;
+}
+
+.btn-primario:hover {
+    color: white;
+    border-color: #431F14;
+    font-weight: 500;
+
+}
+
+.btn-secundario {
+    background-color: white;
+}
+
+.btn-secundario:hover {
+    border-color: rgb(201, 198, 188);
+    font-weight: 500;
+}
+
+.control {
+    border-radius: 50%;
+    padding: 10px 14px;
+
+    background-color: transparent;
+    color: var(--cor-da-fonte);
+    border-color: var(--cor-da-fonte);
+
+}
+
+.btn-whats {
+    background-color: var(--cor-whats);
+    color: white;
+    padding: 6px;
+}
+
+.btn-ifood {
+    background-color: #E80107;
+    color: white;
+    padding: 6px;
+}
+
+
+
+/*Cardapio*/
+.titulo-cardapio {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.cards-wrapper {
+    overflow-x: auto;
+}
+
+.cards-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.cards {
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+}
+
+
+/*Historia*/
+
+
+.carousel-item {
+    border: 3px solid #f7f7f7;
+}
+
+
+/*maps*/
+
+.maps{
+    display: flex;
+    margin: auto;
+}
+
+/*Footer*/
+.footer{
+    margin-top: 30px;
+    box-shadow: 1px 1px 5px rgba(171, 171, 171, 0.562);
+    color: var(--cor-da-fonte);
+}
+
+
+.icon-footer{
+    font-size: 30px;
+    margin-right: 20px;
+}
+a{
+    color: #431F14;
+}
